@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body{
+    background-color: darkslategrey;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+}
+.container{
+    width: 500px;
+    margin: 50px auto;
+    max-width: 100%;
+    background-color: lightseagreen;
+    padding: 10px;
+
+}
+.container input{
+    padding: 7px 0px 7px 7px;
+    width: 100%;
+    margin: 5px 0;
+}
+button{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 ;
+    background-color: khaki;
+    border: 1px solid darkgreen;
+    font-size: 18px;
+    color: sienna;
+}
+.res{
+    height: 150px;
+    width: 100%;
+    background-color: cornflowerblue;
+    text-align: center;
+    color:salmon;
+    padding: 10px 0;
+}
+
+</style>
+<body>
+    <div class="container">
+        <h1>Check Your Result</h1>
+    <form action="#" onsubmit="check()">
+        <input type="number" id="tm" placeholder="Total Marks" required>
+        <input type="number" id="om" placeholder="Obtained Marks" required  >
+        <button type="submit">Check Result</button>
+    </form>
+    <div class="res">
+        <h1>Result  </h1>
+        <h1 id="result"></h1>
+    </div>
+    
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
